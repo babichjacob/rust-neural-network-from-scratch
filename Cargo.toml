@@ -1,0 +1,12 @@
+[package]
+name = "rust-neural-network-from-scratch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+blas-src = { version = "0.8.0", features = ["openblas"] }
+ndarray = { version = "0.15.4", features = ["blas"] }
+ndarray-linalg = { version = "0.14.1", features = ["openblas-system"] }
+openblas-src = { version = "0.10.4", features = ["cblas", "system"] }
